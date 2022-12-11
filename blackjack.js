@@ -28,7 +28,7 @@ const calcPoints = function(hand) {
   let hasAce = false;
   let handScore = 0;
   let isSoft = false;
-
+  console.log(hand)
   for (let i = 0; i < hand.length; i++) {
     const card = hand[i];
 
@@ -48,6 +48,7 @@ const calcPoints = function(hand) {
     isSoft: isSoft
   };
 };
+
 
 const dealerShouldDraw = function(dealerHand) {
   let points = calcPoints(dealerHand).total;
